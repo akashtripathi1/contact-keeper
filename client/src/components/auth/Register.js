@@ -31,7 +31,7 @@ const Register = () => {
                 email,
                 password,
             });
-        } // comment added
+        } // comment deleted
 
     }
   return (
