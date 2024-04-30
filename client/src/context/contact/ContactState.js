@@ -39,14 +39,6 @@ const ContactState = props => {
                 type: 'professional'
 
             },
-            {
-                id: '1',
-                name: 'Jill Johnson',
-                email: 'jill@gmail.com',
-                phone: '111-111-1111',
-                type: 'personal'
-
-            },
         ]
     };
     const [state, dispatch] = useReducer(contactReducer, initialState);
