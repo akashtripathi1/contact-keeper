@@ -5,8 +5,11 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import Alerts from './components/layout/Alerts';
+
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
+import AlertState from './context/alert/AlertState';
 import './App.css';
 
 const App = () => {
@@ -15,12 +18,13 @@ const App = () => {
     <AuthState>
 
       <ContactState>
-
+         <AlertState>
         <Router>
 
           <Fragment>
             <Navbar />
             <div className="container">
+              <Alerts />
               <Routes>
                 <Route exact path='/' element={(
                   <Fragment>
@@ -46,6 +50,7 @@ const App = () => {
             </div>
           </Fragment>
         </Router>
+        </AlertState>
       </ContactState>
     </AuthState>
 
